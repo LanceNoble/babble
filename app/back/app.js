@@ -29,4 +29,4 @@ app.post('/user', user.post)
 app.get('/story', story.get)
 app.post('/story', story.post)
 
-app.listen(port, () => console.log(`Listening on port ${port}`))
+app.listen(process.env.PORT || 3000, () => console.log(`Listening on port ${port}`))
