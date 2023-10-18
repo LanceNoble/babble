@@ -1,0 +1,21 @@
+{
+  "name": "igm480_5a",
+  "version": "1.0.0",
+  "engines": {
+    "node": "16.20.1",
+    "npm": "8.19.4"
+  },
+  "description": "A web application where people draw on one canvas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./app/back/app.js"
+  },
+  "author": "Lance Noble",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^7.6.3"
+  }
+}
