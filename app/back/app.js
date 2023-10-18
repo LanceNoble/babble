@@ -13,7 +13,7 @@ async function main() {
 main().catch(err => console.log(err))
 
 const app = express()
-const port = 3000
+app.set('trust proxy', true)
 
 app.use((req, res, next) => {
     if (process.env.NODE_ENV === 'production' && req.headers['x-forwarded-proto'] !== 'https')
