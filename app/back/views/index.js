@@ -16,7 +16,7 @@ async function main() {
 
     let form = document.querySelector('form')
     let note = document.querySelector('#note')
-    if (Date.now() >= Date.parse(userJson.availability)) {
+    if (Date.now() >= Date.parse(userJson.availability) - 5000) {
         form.style.display = 'block'
         note.style.display = 'none'
     }
